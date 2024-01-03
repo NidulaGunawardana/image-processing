@@ -2,6 +2,7 @@ import cv2
 import mediapipe as mp
 import time
 
+# codes are here https://www.computervision.zone/courses/advance-computer-vision-with-python/
 
 def rescaleFrame(frame,scale=0.75):
     """
@@ -17,7 +18,7 @@ def rescaleFrame(frame,scale=0.75):
 mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 pose = mpPose.Pose()
-cap = cv2.VideoCapture('C:/Users/nidul/Desktop/ACCA Folder My/image processing/Deep image clasifire/Body Tracking/Video/1.mp4')
+cap = cv2.VideoCapture('C:/Users/nidul/Desktop/ACCA Folder My/image processing/Deep image clasifire/Body Tracking/Video/2.mp4')
 pTime = 0
 while True:
     success, frame = cap.read()
